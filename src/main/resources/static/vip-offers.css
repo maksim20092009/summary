@@ -1,0 +1,91 @@
+/* 🔹 Основной стиль VIP-раздела */
+#vip-offers {
+    background: linear-gradient(120deg, #6a11cb, #2575fc, #ff6b6b);
+    background-size: 400% 400%;
+    animation: gradientShift 6s infinite alternate ease-in-out;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+/* 🔹 Анимация перелива градиента */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* 🔹 Заголовок раздела */
+#vip-offers h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+}
+
+/* 🔹 Карточка отеля */
+.vip-hotel {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🔹 Эффект при наведении */
+.vip-hotel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 🔹 Заголовок номера */
+.vip-hotel h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Описание номера */
+.vip-hotel p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* 🔹 Анимация появления */
+#vip-offers {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Подсветка VIP-карточек при наведении */
+.vip-hotel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+}
+
+/* 🔹 Плавное появление карточек */
+.vip-hotel {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Акцент на цене */
+.vip-hotel p strong {
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.5);
+}

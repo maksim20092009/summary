@@ -1,0 +1,135 @@
+/* Градиентный фон */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #007bff, #ff6b6b);
+    color: white;
+}
+
+/* Заголовок и навигация */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border-bottom: 4px solid #004494;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: linear-gradient(90deg, #004494, #007bff);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Ссылки в меню */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Анимация при наведении */
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+/* Светящийся эффект при фокусе */
+nav a:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* Контентная область */
+.content {
+    display: none;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.active {
+    display: block;
+}
+
+/* Улучшенные фильтры */
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Поля выбора и ввода */
+.filters select, .filters input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Анимация при фокусе */
+.filters select:focus, .filters input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    transform: scale(1.05);
+}
+
+/* Улучшение кнопок */
+button {
+    padding: 12px;
+    background: linear-gradient(45deg, #ff6b6b, #f4c542);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f4c542, #ff6b6b);
+    transform: scale(1.1);
+}
+
+/* Гладкое появление */
+.filters select, .filters input, button {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Улучшенная анимация заголовков */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
