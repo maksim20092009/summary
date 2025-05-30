@@ -7,6 +7,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Entity
+//генерирует геттеры, сеттеры
 @Data
 @Table(name = "Guests")
 public class Guests {
@@ -14,6 +15,8 @@ public class Guests {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int guestID;
+
+    //настройка столбца в базе данных
 
     @Column(name = "Name", nullable = false, length = 50)
     private String name;
