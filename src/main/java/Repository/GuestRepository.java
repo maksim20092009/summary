@@ -1,3 +1,4 @@
+//обеспечивает доступ к данным
 package Repository;
 
 import Model.Guests;

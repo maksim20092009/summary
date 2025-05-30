@@ -1,3 +1,4 @@
+//реализует бизнес-логику
 package Service;
 
 import Model.Guests;

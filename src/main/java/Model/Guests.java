@@ -1,3 +1,4 @@
+//отвечает за бизнес-логику приложения
 package Model;
 
 import jakarta.persistence.*;
