@@ -46,10 +46,14 @@
             <option value="new-york">Нью-Йорк</option>
             <option value="paris">Париж</option>
             <option value="las-vegas">Лас-Вегас</option>
-            <option value="singapore">Сингапур</option>
+            <option value="singapyr">Сингапур</option>
             <option value="abu-dhabi">Абу-Даби</option>
             <option value="london">Лондон</option>
             <option value="udaipur">Удайпур</option>
+            <option value="madrid">Мадрид</option>
+            <option value="berlin">Берлин</option>
+            <option value="bangkok">Банкок</option>
+            <option value="athens">Афины</option>
         </select>
 
         <label for="price">Макс. цена (USD):</label>
@@ -61,6 +65,7 @@
             <option value="5">5 звёзд</option>
             <option value="4">4 звезды</option>
             <option value="3">3 звезды</option>
+            <option value="3">2 звезды</option>
         </select>
 
         <label for="amenities">Удобства:</label>
@@ -69,26 +74,84 @@
             <option value="wifi">Wi-Fi</option>
             <option value="pool">Бассейн</option>
             <option value="parking">Парковка</option>
+            <option value="fitness center">Фитнес-центр</option>
+            <option value="restaurant and bar">Ресторан и бар</option>
+            <option value="spa and massage">СПА и массаж</option>
+            <option value="transfer service">Трансфер</option>
+            <option value="children’s amenities">Детские удобства</option>
         </select>
     </div>
     <!-- Список отелей -->
 
     <div id="hotel-list">
-        <div class="hotel" data-city="dubai" data-price="600" data-stars="5" data-amenities="wifi,pool">
+        <div class="hotel" data-city="dubai" data-price="600" data-stars="5" data-amenities="wifi,pool,fitness center, transfer service">
             <h3>Burj Al Arab</h3>
             <p>Дубай | 5 звёзд | $600 за ночь | Wi-Fi, Бассейн</p>
         </div>
-        <div class="hotel" data-city="new-york" data-price="450" data-stars="5" data-amenities="wifi,parking">
+
+        <div class="hotel" data-city="new-york" data-price="450" data-stars="5" data-amenities="wifi,parking,restaurant and bar,children’s amenities">
             <h3>The Plaza Hotel</h3>
             <p>Нью-Йорк | 5 звёзд | $450 за ночь | Wi-Fi, Парковка</p>
         </div>
-        <div class="hotel" data-city="paris" data-price="700" data-stars="5" data-amenities="wifi,pool">
+
+        <div class="hotel" data-city="paris" data-price="700" data-stars="5" data-amenities="wifi,pool,parking,spa and massage">
             <h3>The Ritz Paris</h3>
             <p>Париж | 5 звёзд | $700 за ночь | Wi-Fi, Бассейн</p>
         </div>
-        <div class="hotel" data-city="las-vegas" data-price="400" data-stars="4" data-amenities="wifi,parking">
+
+        <div class="hotel" data-city="las-vegas" data-price="400" data-stars="4" data-amenities="wifi,parking,transfer service,restaurant and bar">
             <h3>Bellagio</h3>
             <p>Лас-Вегас | 4 звезды | $400 за ночь | Wi-Fi, Парковка</p>
+        </div>
+
+        <div class="hotel" data-city="singapyr" data-price="620" data-stars="5" data-amenities="wifi,pool,spa and massage,transfer service">
+            <h3>Marina Bay Sands</h3>
+            <p>Сингапур | 5 звёзд | $620 за ночь | Wi-Fi, Бассейн</p>
+        </div>
+
+        <div class="hotel" data-city="abu-dhabi" data-price="100" data-stars="3" data-amenities="wifi,parking,spa and massage,pool">
+            <h3>Nehal Hotel</h3>
+            <p>Абу-Даби | 3 звёзд | $100 за ночь | Wi-Fi, Бассейн</p>
+        </div>
+
+        <div class="hotel" data-city="london" data-price="550" data-stars="4" data-amenities="wifi,restaurant and bar,parking,children’s amenities">
+            <h3>Fielding Hotel</h3>
+            <p>Лондон | 4 звёзд | $550 за ночь | Wi-Fi, Бассейн</p>
+        </div>
+
+        <div class="hotel" data-city="udaipur" data-price="670" data-stars="5" data-amenities="wifi,pool,parking,fitness center">
+            <h3>The Leela Palace Udaipur</h3>
+            <p>Удайпур | 5 звёзд | $670 за ночь | Wi-Fi, Бассейн</p>
+        </div>
+
+        <div class="hotel" data-city="paris" data-price="520" data-stars="5" data-amenities="wifi,pool,parking,children’s amenities">
+            <h3>Grand Lumière Hotel</h3>
+            <p>Париж | 5 звёзд | $520 за ночь | Wi-Fi, Бассейн, СПА</p>
+        </div>
+
+        <div class="hotel" data-city="dubai" data-price="650" data-stars="5" data-amenities="wifi,pool,parking,transfer service">
+            <h3>Emerald Tower Resort</h3>
+            <p>Дубай | 5 звёзд | $650 за ночь | Wi-Fi, Бассейн, Фитнес-центр</p>
+        </div>
+
+        <div class="hotel" data-city="madrid" data-price="120" data-stars="2" data-amenities="wifi,parking,pool,restaurant and bar">
+            <h3>Solstice Inn</h3>
+            <p>Мадрид | 2 звезды | $120 за ночь | Wi-Fi</p>
+        </div>
+
+        <div class="hotel" data-city="berlin" data-price="190" data-stars="3" data-amenities="wifi,parking,pool,spa and massage">
+            <h3>Central Berlin Lodge</h3>
+            <p>Берлин | 3 звезды | $190 за ночь | Wi-Fi, Ресторан</p>
+        </div>
+
+        <div class="hotel" data-city="bangkok" data-price="280" data-stars="4" data-amenities="wifi,pool,parking,transfer service">
+            <h3>Sapphire Bay Hotel</h3>
+            <p>Бангкок | 4 звезды | $280 за ночь | Wi-Fi, Бассейн, СПА</p>
+        </div>
+
+        <div class="hotel" data-city="athens" data-price="175" data-stars="3" data-amenities="wifi,parking,pool,fitness center">
+            <h3>Acropolis View Hotel</h3>
+            <p>Афины | 3 звезды | $175 за ночь | Wi-Fi, Ресторан</p>
         </div>
     </div>
 </section>
@@ -102,6 +165,18 @@
             <option value="">Выберите...</option>
             <option value="burj">Burj Al Arab, Дубай ($600)</option>
             <option value="plaza">The Plaza Hotel, Нью-Йорк ($450)</option>
+            <option value="ritz">The Ritz Paris, Париж ($700)</option>
+            <option value="bellagio">Bellagio, Лас-Вегас ($400)</option>
+            <option value="bay">Marina Bay Sands, Сингапур ($620)</option>
+            <option value="nehal">Nehal Hotel, Абу-Даби ($100)</option>
+            <option value="fielding">Fielding Hotel, Лондон ($550)</option>
+            <option value="leela">The Leela Palace Udaipur, Удайпур ($670)</option>
+            <option value="limere">Grand Limere Hotel, Париж ($520)</option>
+            <option value="tower">Emerald Tower Resort, Дубай ($650)</option>
+            <option value="solstice">Solstice Inn, Мадрид ($120)</option>
+            <option value="berlin">Central Berlin Lodge, Берлин ($190)</option>
+            <option value="sapphire">Sapphire Bay Hotel, Бангкок ($280)</option>
+            <option value="view">Acropolis View Hotel, Афины ($175)</option>
         </select>
 
         <label for="room">Выберите тип номера:</label>
@@ -109,7 +184,12 @@
             <option value="">Выберите...</option>
             <option value="standard">Стандартный (+$100)</option>
             <option value="deluxe">Делюкс (+$200)</option>
-            <option value="suite">Сюит (+$300)</option>
+            <option value="suite">Люкс (+$350)</option>
+            <option value="presidential suite">Президентский люкс (+$1000)</option>
+            <option value="apartments">Апартаменты (+$300)</option>
+            <option value="family room">Семейный номер (+$450)</option>
+            <option value="room with a view">Номер с видом (+$200)</option>
+            <option value="bungalow / villa">Бунгало / Вилла (+$1500)</option>
         </select>
 
         <label for="checkin">Дата заезда:</label>
@@ -192,6 +272,16 @@
             <option value="The Plaza Hotel">The Plaza Hotel, Нью-Йорк</option>
             <option value="The Ritz Paris">The Ritz Paris, Париж</option>
             <option value="Bellagio">Bellagio, Лас-Вегас</option>
+            <option value="Marina Bay Sands">Marina Bay Sands, Сингапур</option>
+            <option value="Nehal Hotel">Nehal Hotel, Абу-Даби</option>
+            <option value="Fielding Hotel">Fielding Hotel, Лондон</option>
+            <option value="The Leela Palace Udaipur">The Leela Palace Udaipur, Удайпур</option>
+            <option value="Grand Lumiere Hotel">Grand Lumiere Hotel, Париж</option>
+            <option value="Emerald Tower Resort">Emerald Tower Resort, Дубай</option>
+            <option value="Solstice Inn">Solstice Inn, Мадрид</option>
+            <option value="Central Berlin Lodge">Central Berlin Lodge, Берлин</option>
+            <option value="Sapphire Bay Hotel">Sapphire Bay Hotel, Бангкок</option>
+            <option value="Acropolis View Hotel">Acropolis View Hotel, Афины</option>
         </select>
 
         <label for="user-review">Ваш отзыв:</label>
